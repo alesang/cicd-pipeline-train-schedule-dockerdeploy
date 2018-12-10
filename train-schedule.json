@@ -1,8 +1,8 @@
 {
-    "family": "train_schedule",
+    "family": "train-schedule",
     "containerDefinitions": [
         {
-            "name": "train_schedule_task",
+            "name": "train-schedule",
             "image": "440642112791.dkr.ecr.us-east-1.amazonaws.com/train_schedule",
             "cpu": 10,
             "memory": 500,
