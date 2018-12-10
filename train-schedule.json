@@ -1,0 +1,23 @@
+{
+    "family": "train_schedule",
+    "containerDefinitions": [
+        {
+            "name": "train_schedule_task",
+            "image": "440642112791.dkr.ecr.us-east-1.amazonaws.com/train_schedule",
+            "cpu": 10,
+            "memory": 500,
+            "portMappings": [
+                {                   
+                    "containerPort": 80,
+                    "hostPort": 80
+                }
+            ],
+            "entryPoint": [
+                "/usr/sbin/apache2",
+                "-D",
+                "FOREGROUND"
+            ],
+            "essential": true
+        }
+    ]
+}
